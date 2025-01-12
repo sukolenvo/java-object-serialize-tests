@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         version: [ '17', '21' ]
         distribution: [ 'zulu', 'temurin', 'adopt-openj9', 'semeru', 'jetbrains', 'adopt-hotspot' ]
